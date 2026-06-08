@@ -116,11 +116,11 @@ export const projectStats = [
 ] satisfies { icon: LucideIcon; label: string; value: string; detail: string }[];
 
 export const modules = [
-  { id: "occupancy", title: "Path to Occupancy", text: "Milestones, activities, and readiness leading to 2031 opening.", mode: "DELIVERY" as NavMode, icon: CalendarCheck, image: "/assets/renderings/amex-2wtc-greenwich.jpg" },
-  { id: "journey", title: "Colleague Journey", text: "Explore the day in the life across 2 World Trade Center.", mode: "EXPERIENCE" as NavMode, icon: UsersRound, image: "/assets/renderings/amex-2wtc-fulton.jpg" },
-  { id: "context", title: "Project Context", text: "2 WTC at the heart of the World Trade Center campus.", mode: "VISION" as NavMode, icon: Building2, image: "/assets/renderings/amex-2wtc-hero.jpg" },
-  { id: "interior", title: "Interior Experience", text: "Design intent, experience standards, and workplace strategies.", mode: "EXPERIENCE" as NavMode, icon: BriefcaseBusiness, image: "/assets/renderings/amex-2wtc-looking-up.jpg" },
-  { id: "sequencing", title: "Construction Sequencing", text: "Phased delivery, logistics, and vertical coordination.", mode: "DELIVERY" as NavMode, icon: Clock3, image: "/assets/renderings/amex-2wtc-day-crown.jpg" },
-  { id: "systems", title: "MEP & Coordination", text: "Integrated systems planning and model coordination.", mode: "STACK" as NavMode, icon: ShieldCheck, image: "/assets/renderings/amex-2wtc-dusk-crown.jpg" },
-  { id: "insights", title: "Executive Reporting", text: "Real-time insights and KPIs for executive decision-making.", mode: "REPORTING" as NavMode, icon: CircleAlert, image: "/assets/renderings/amex-2wtc-hero.jpg" },
+  { id: "occupancy", title: "Path to Occupancy", text: "Milestones, activities, and readiness leading to 2031 opening.", mode: "DELIVERY" as NavMode, icon: CalendarCheck, image: "assets/renderings/amex-2wtc-greenwich.jpg" },
+  { id: "journey", title: "Colleague Journey", text: "Explore the day in the life across 2 World Trade Center.", mode: "EXPERIENCE" as NavMode, icon: UsersRound, image: "assets/renderings/amex-2wtc-fulton.jpg" },
+  { id: "context", title: "Project Context", text: "2 WTC at the heart of the World Trade Center campus.", mode: "VISION" as NavMode, icon: Building2, image: "assets/renderings/amex-2wtc-hero.jpg" },
+  { id: "interior", title: "Interior Experience", text: "Design intent, experience standards, and workplace strategies.", mode: "EXPERIENCE" as NavMode, icon: BriefcaseBusiness, image: "assets/renderings/amex-2wtc-looking-up.jpg" },
+  { id: "sequencing", title: "Construction Sequencing", text: "Phased delivery, logistics, and vertical coordination.", mode: "DELIVERY" as NavMode, icon: Clock3, image: "assets/renderings/amex-2wtc-day-crown.jpg" },
+  { id: "systems", title: "MEP & Coordination", text: "Integrated systems planning and model coordination.", mode: "STACK" as NavMode, icon: ShieldCheck, image: "assets/renderings/amex-2wtc-dusk-crown.jpg" },
+  { id: "insights", title: "Executive Reporting", text: "Real-time insights and KPIs for executive decision-making.", mode: "REPORTING" as NavMode, icon: CircleAlert, image: "assets/renderings/amex-2wtc-hero.jpg" },
 ];

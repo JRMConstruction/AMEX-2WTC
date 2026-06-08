@@ -11,7 +11,7 @@ export default function ProjectOverviewPanel() {
         <div className="card-chip" />
       </div>
       <div className="project-image" aria-label="Illustrated 2 World Trade Center tower">
-        <img src="/assets/renderings/amex-2wtc-hero.jpg" alt="2 World Trade Center rendering" />
+        <img src="assets/renderings/amex-2wtc-hero.jpg" alt="2 World Trade Center rendering" />
         <div>
           <strong>American Express Headquarters Tenant</strong>
           <span>Foster + Partners Architect</span>

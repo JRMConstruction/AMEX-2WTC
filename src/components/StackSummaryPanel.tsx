@@ -8,7 +8,7 @@ export default function StackSummaryPanel() {
     <aside className="stack-summary-panel stack-card">
       <h2>Stack Summary</h2>
       <div className="stack-project-card">
-        <img src="/assets/renderings/amex-2wtc-hero.jpg" alt="2 World Trade Center exterior rendering" />
+        <img src="assets/renderings/amex-2wtc-hero.jpg" alt="2 World Trade Center exterior rendering" />
         <div>
           <strong>Address</strong>
           <span>{stackFacts.address[0]}<br />{stackFacts.address[1]}</span>

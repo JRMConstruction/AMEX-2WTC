@@ -35,7 +35,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "A Connected Ecosystem",
     title: "Headquarters Vision",
     subtitle: "A vertical campus for American Express that connects workplace communities, hospitality, leadership, and outdoor space.",
-    image: "/assets/renderings/amex-2wtc-dusk-crown.jpg",
+    image: "assets/renderings/amex-2wtc-dusk-crown.jpg",
     metrics: [
       { label: "Vertical Campus", value: "7-55", detail: "Floors in scope", tone: "blue" },
       { label: "Exchange Levels", value: "7+", detail: "Amenity anchors", tone: "teal" },
@@ -49,9 +49,9 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "JRM Pursuit Message",
     rightItems: ["From 270 Park to 2 World Trade Center", "Building Certainty. Delivering Excellence.", "A Trusted Partner for American Express"],
     cards: [
-      { title: "Campus Arrival", text: "A clear, secure arrival experience sets the tone for the headquarters.", image: "/assets/renderings/amex-2wtc-greenwich.jpg" },
-      { title: "Exchange Levels", text: "Amenity anchors create natural convening moments across the tower.", image: "/assets/renderings/amex-2wtc-looking-up.jpg" },
-      { title: "Leadership Workplace", text: "Executive environments balance hospitality, security, and performance.", image: "/assets/renderings/amex-2wtc-day-crown.jpg" },
+      { title: "Campus Arrival", text: "A clear, secure arrival experience sets the tone for the headquarters.", image: "assets/renderings/amex-2wtc-greenwich.jpg" },
+      { title: "Exchange Levels", text: "Amenity anchors create natural convening moments across the tower.", image: "assets/renderings/amex-2wtc-looking-up.jpg" },
+      { title: "Leadership Workplace", text: "Executive environments balance hospitality, security, and performance.", image: "assets/renderings/amex-2wtc-day-crown.jpg" },
     ],
   },
   EXPERIENCE: {
@@ -59,7 +59,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "Workplace Communities",
     title: "Colleague Experience",
     subtitle: "Journey-led views show how colleagues, guests, executives, and operators move through the vertical campus.",
-    image: "/assets/renderings/amex-2wtc-fulton.jpg",
+    image: "assets/renderings/amex-2wtc-fulton.jpg",
     metrics: [
       { label: "Colleague Journey", value: "Daily", detail: "Arrival to exchange", tone: "blue" },
       { label: "Client Journey", value: "Hosted", detail: "Secure and premium", tone: "teal" },
@@ -73,9 +73,9 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "Experience Intelligence",
     rightItems: ["Hospitality adjacency", "Room-type standards", "AV-enabled collaboration", "Interior-to-exterior continuity"],
     cards: [
-      { title: "Colleague Day", text: "Map daily patterns from arrival to workplace to exchange.", image: "/assets/renderings/amex-2wtc-hero.jpg" },
-      { title: "Client Hosted Path", text: "Separate secure, premium moments for visitors and partners.", image: "/assets/renderings/amex-2wtc-greenwich.jpg" },
-      { title: "Operations Flow", text: "Coordinate back-of-house movement without interrupting experience.", image: "/assets/renderings/amex-2wtc-fulton.jpg" },
+      { title: "Colleague Day", text: "Map daily patterns from arrival to workplace to exchange.", image: "assets/renderings/amex-2wtc-hero.jpg" },
+      { title: "Client Hosted Path", text: "Separate secure, premium moments for visitors and partners.", image: "assets/renderings/amex-2wtc-greenwich.jpg" },
+      { title: "Operations Flow", text: "Coordinate back-of-house movement without interrupting experience.", image: "assets/renderings/amex-2wtc-fulton.jpg" },
     ],
   },
   DELIVERY: {
@@ -83,7 +83,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "Delivery Intelligence",
     title: "Path to Occupancy",
     subtitle: "RFI-backed controls dashboard for procurement, floor packaging, logistics, inspections, and turnover sequencing.",
-    image: "/assets/renderings/amex-2wtc-day-crown.jpg",
+    image: "assets/renderings/amex-2wtc-day-crown.jpg",
     metrics: [
       { label: "Schedule Platform", value: "P6 + Asta", detail: "MS Project / Procore export", tone: "blue" },
       { label: "Floor Packages", value: "4-6", detail: "Floors per production block", tone: "teal" },
@@ -97,9 +97,9 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "Watchlist",
     rightItems: ["Food service equipment", "AV / broadcast backbone", "Terrace interfaces", "Security integration", "Specialty ceilings"],
     cards: [
-      { title: "Construction Sequencing", text: "Phased delivery, logistics, and vertical coordination.", image: "/assets/renderings/amex-2wtc-dusk-crown.jpg" },
-      { title: "Turnover Readiness", text: "Readiness by floor, system, and stakeholder milestone.", image: "/assets/renderings/amex-2wtc-looking-up.jpg" },
-      { title: "Procurement Control", text: "Long-lead packages and partner visibility.", image: "/assets/renderings/amex-2wtc-greenwich.jpg" },
+      { title: "Construction Sequencing", text: "Phased delivery, logistics, and vertical coordination.", image: "assets/renderings/amex-2wtc-dusk-crown.jpg" },
+      { title: "Turnover Readiness", text: "Readiness by floor, system, and stakeholder milestone.", image: "assets/renderings/amex-2wtc-looking-up.jpg" },
+      { title: "Procurement Control", text: "Long-lead packages and partner visibility.", image: "assets/renderings/amex-2wtc-greenwich.jpg" },
     ],
   },
   PROOF: {
@@ -107,7 +107,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "From 270 Park to 2 World Trade Center",
     title: "270 Park Playbook",
     subtitle: "JRM's headquarters experience transfers into scale, quality, logistics, security, executive reporting, and amenity delivery.",
-    image: "/assets/renderings/amex-2wtc-greenwich.jpg",
+    image: "assets/renderings/amex-2wtc-greenwich.jpg",
     metrics: [
       { label: "Delivered Scale", value: "1.3M+ SF", detail: "Headquarters experience", tone: "blue" },
       { label: "Workplace Scale", value: "10,000", detail: "Employee environment", tone: "teal" },
@@ -121,9 +121,9 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "Client Confidence",
     rightItems: ["Quality certainty", "Decision visibility", "Partner alignment", "Executive communication"],
     cards: [
-      { title: "Executive Interiors", text: "High-touch finishes and leadership environments.", image: "/assets/renderings/amex-2wtc-day-crown.jpg" },
-      { title: "Amenity Complexity", text: "Food, wellness, convening, and AV integration.", image: "/assets/renderings/amex-2wtc-fulton.jpg" },
-      { title: "Reporting Cadence", text: "Decision support for leadership and stakeholders.", image: "/assets/renderings/amex-2wtc-dusk-crown.jpg" },
+      { title: "Executive Interiors", text: "High-touch finishes and leadership environments.", image: "assets/renderings/amex-2wtc-day-crown.jpg" },
+      { title: "Amenity Complexity", text: "Food, wellness, convening, and AV integration.", image: "assets/renderings/amex-2wtc-fulton.jpg" },
+      { title: "Reporting Cadence", text: "Decision support for leadership and stakeholders.", image: "assets/renderings/amex-2wtc-dusk-crown.jpg" },
     ],
   },
   RISK: {
@@ -131,7 +131,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "Turnover Readiness",
     title: "Risk Intelligence",
     subtitle: "A conceptual risk map for systems, procurement, specialty trades, terrace interfaces, and security-sensitive areas.",
-    image: "/assets/renderings/amex-2wtc-looking-up.jpg",
+    image: "assets/renderings/amex-2wtc-looking-up.jpg",
     metrics: [
       { label: "Risk Register", value: "Live", detail: "By floor block and criticality", tone: "red" },
       { label: "PANYNJ / QAD", value: "TCAP", detail: "Submission and inspection path", tone: "gold" },
@@ -145,8 +145,8 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "Mitigation Moves",
     rightItems: ["Early procurement release", "Integrated MEP coordination", "Trade partner workshops", "Mockup gates", "Executive escalation cadence"],
     cards: [
-      { title: "High-Risk Interfaces", text: "Track terrace, AV, security, and food-service dependencies.", image: "/assets/renderings/amex-2wtc-looking-up.jpg" },
-      { title: "Mitigation Board", text: "Ownership, decisions, and status in one view.", image: "/assets/renderings/amex-2wtc-hero.jpg" },
+      { title: "High-Risk Interfaces", text: "Track terrace, AV, security, and food-service dependencies.", image: "assets/renderings/amex-2wtc-looking-up.jpg" },
+      { title: "Mitigation Board", text: "Ownership, decisions, and status in one view.", image: "assets/renderings/amex-2wtc-hero.jpg" },
       { title: "Risk Heatmap", text: "Floor-block risk register for coordination hotspots." },
     ],
   },
@@ -155,7 +155,7 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     eyebrow: "Executive Reporting",
     title: "Real-Time Insights",
     subtitle: "Executive dashboard views for progress, schedule health, budget status, turnover readiness, safety, risk, and decision support.",
-    image: "/assets/renderings/amex-2wtc-dusk-crown.jpg",
+    image: "assets/renderings/amex-2wtc-dusk-crown.jpg",
     metrics: [
       { label: "Executive Dashboard", value: "Weekly", detail: "Digital leadership view", tone: "blue" },
       { label: "Progress Report", value: "Monthly", detail: "PDF + data package", tone: "green" },
@@ -169,9 +169,9 @@ export const navInterfaces: Record<Exclude<NavMode, "STACK">, NavInterface> = {
     rightTitle: "Decision Support",
     rightItems: ["Milestones", "Approvals", "Escalations", "Forecasts", "Readiness gates"],
     cards: [
-      { title: "Leadership Snapshot", text: "One-page status for executive decisions.", image: "/assets/renderings/amex-2wtc-day-crown.jpg" },
-      { title: "KPI Dashboard", text: "Progress, risk, procurement, and turnover readiness.", image: "/assets/renderings/amex-2wtc-dusk-crown.jpg" },
-      { title: "Kiosk Mode", text: "Presentation-ready reporting for pursuit and client reviews.", image: "/assets/renderings/amex-2wtc-hero.jpg" },
+      { title: "Leadership Snapshot", text: "One-page status for executive decisions.", image: "assets/renderings/amex-2wtc-day-crown.jpg" },
+      { title: "KPI Dashboard", text: "Progress, risk, procurement, and turnover readiness.", image: "assets/renderings/amex-2wtc-dusk-crown.jpg" },
+      { title: "Kiosk Mode", text: "Presentation-ready reporting for pursuit and client reviews.", image: "assets/renderings/amex-2wtc-hero.jpg" },
     ],
   },
 };

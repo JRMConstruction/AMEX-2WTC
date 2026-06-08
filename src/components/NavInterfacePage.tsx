@@ -117,19 +117,19 @@ function VisionLanding({ config }: { config: typeof navInterfaces.VISION }) {
   ];
 
   const cards = [
-    { title: "Urban Context", text: "2 WTC and its role in Lower Manhattan's transformation.", image: "/assets/renderings/amex-2wtc-day-crown.jpg" },
-    { title: "Arrival Experience", text: "World-class arrival for colleagues, clients, and guests.", image: "/assets/renderings/amex-2wtc-greenwich.jpg" },
-    { title: "Outdoor Space Network", text: "Connected terraces, gardens, and green roofs across the tower.", image: "/assets/renderings/amex-2wtc-looking-up.jpg" },
-    { title: "Workplace Vision", text: "Human-centered environments designed for how we work.", image: "/assets/renderings/amex-2wtc-fulton.jpg" },
-    { title: "270 Park Playbook", text: "Proven strategies from 270 Park to drive productivity and pride.", image: "/assets/renderings/amex-2wtc-hero.jpg" },
-    { title: "Executive Reporting", text: "Dashboards and KPIs for visibility, performance, and decision support.", image: "/assets/renderings/amex-2wtc-dusk-crown.jpg" },
+    { title: "Urban Context", text: "2 WTC and its role in Lower Manhattan's transformation.", image: "assets/renderings/amex-2wtc-day-crown.jpg" },
+    { title: "Arrival Experience", text: "World-class arrival for colleagues, clients, and guests.", image: "assets/renderings/amex-2wtc-greenwich.jpg" },
+    { title: "Outdoor Space Network", text: "Connected terraces, gardens, and green roofs across the tower.", image: "assets/renderings/amex-2wtc-looking-up.jpg" },
+    { title: "Workplace Vision", text: "Human-centered environments designed for how we work.", image: "assets/renderings/amex-2wtc-fulton.jpg" },
+    { title: "270 Park Playbook", text: "Proven strategies from 270 Park to drive productivity and pride.", image: "assets/renderings/amex-2wtc-hero.jpg" },
+    { title: "Executive Reporting", text: "Dashboards and KPIs for visibility, performance, and decision support.", image: "assets/renderings/amex-2wtc-dusk-crown.jpg" },
   ];
 
   return (
     <main className="vision-page">
       <section className="vision-overview vision-panel">
         <h2>Project Overview</h2>
-        <img src="/assets/renderings/amex-2wtc-hero.jpg" alt="" />
+        <img src="assets/renderings/amex-2wtc-hero.jpg" alt="" />
         <div className="vision-fact-list">
           <span className="vision-tooltip" data-tip="Primary project address and campus anchor."><MapPin size={20} />200 Greenwich Street<br />New York, NY 10007</span>
           <span><Building2 size={20} />Foster + Partners</span>
@@ -255,22 +255,22 @@ function ReportingDashboard() {
 }
 
 const preconTeam = [
-  { name: "Keith Frerichs", role: "Vice President Interiors", group: "Executive Lead", image: "/assets/team/keith-frerichs.jpg", featured: true },
-  { name: "Antonina Caruso", role: "Vice President Business Development", group: "Client Strategy", image: "/assets/team/antonina-caruso.jpg", featured: true },
-  { name: "Adam Brueckner", role: "Vice President Field Operations", group: "Field Leadership", image: "/assets/team/adam-brueckner.jpg", featured: true },
-  { name: "Aaron Jones", role: "Senior Project Manager", group: "Project Controls", image: "/assets/team/aaron-jones.jpg" },
-  { name: "Aaron Chaney", role: "Project Manager", group: "Preconstruction", image: "/assets/team/aaron-chaney.jpg" },
-  { name: "Dana Craighead", role: "Construction Scheduler", group: "Schedule", image: "/assets/team/dana-craighead.jpg" },
-  { name: "Eve Vick", role: "Director of Scheduling", group: "Schedule", image: "/assets/team/eve-vick.jpg" },
-  { name: "Chris Palma", role: "Construction Lead", group: "Field Execution", image: "/assets/team/chris-palma.jpg" },
-  { name: "John Porcelli", role: "Superintendent", group: "Field Execution", image: "/assets/team/john-porcelli.jpg" },
-  { name: "Catherine Theocharis", role: "EHS Manager", group: "Safety", image: "/assets/team/catherine-theocharis.svg" },
-  { name: "Michael Kersten", role: "Director of Permitting", group: "Permitting", image: "/assets/team/michael-kersten.jpg" },
-  { name: "Gianny Baidal", role: "Senior VDC Manager", group: "VDC", image: "/assets/team/gianny-baidal.jpg" },
-  { name: "Jorgelina Sabez", role: "Senior Project Coordinator", group: "Coordination", image: "/assets/team/jorgelina-sabez.jpg" },
-  { name: "Ahmed Mahmud", role: "Rotation Program Trainee", group: "Project Support", image: "/assets/team/ahmed-mahmud.jpg" },
-  { name: "Mario Javier Romero", role: "Project Support", group: "Project Support", image: "/assets/team/mario-javier-romero.jpg" },
-  { name: "Jordan Reid", role: "Project Support", group: "Project Support", image: "/assets/team/jordan-reid.jpg" },
+  { name: "Keith Frerichs", role: "Vice President Interiors", group: "Executive Lead", image: "assets/team/keith-frerichs.jpg", featured: true },
+  { name: "Antonina Caruso", role: "Vice President Business Development", group: "Client Strategy", image: "assets/team/antonina-caruso.jpg", featured: true },
+  { name: "Adam Brueckner", role: "Vice President Field Operations", group: "Field Leadership", image: "assets/team/adam-brueckner.jpg", featured: true },
+  { name: "Aaron Jones", role: "Senior Project Manager", group: "Project Controls", image: "assets/team/aaron-jones.jpg" },
+  { name: "Aaron Chaney", role: "Project Manager", group: "Preconstruction", image: "assets/team/aaron-chaney.jpg" },
+  { name: "Dana Craighead", role: "Construction Scheduler", group: "Schedule", image: "assets/team/dana-craighead.jpg" },
+  { name: "Eve Vick", role: "Director of Scheduling", group: "Schedule", image: "assets/team/eve-vick.jpg" },
+  { name: "Chris Palma", role: "Construction Lead", group: "Field Execution", image: "assets/team/chris-palma.jpg" },
+  { name: "John Porcelli", role: "Superintendent", group: "Field Execution", image: "assets/team/john-porcelli.jpg" },
+  { name: "Catherine Theocharis", role: "EHS Manager", group: "Safety", image: "assets/team/catherine-theocharis.svg" },
+  { name: "Michael Kersten", role: "Director of Permitting", group: "Permitting", image: "assets/team/michael-kersten.jpg" },
+  { name: "Gianny Baidal", role: "Senior VDC Manager", group: "VDC", image: "assets/team/gianny-baidal.jpg" },
+  { name: "Jorgelina Sabez", role: "Senior Project Coordinator", group: "Coordination", image: "assets/team/jorgelina-sabez.jpg" },
+  { name: "Ahmed Mahmud", role: "Rotation Program Trainee", group: "Project Support", image: "assets/team/ahmed-mahmud.jpg" },
+  { name: "Mario Javier Romero", role: "Project Support", group: "Project Support", image: "assets/team/mario-javier-romero.jpg" },
+  { name: "Jordan Reid", role: "Project Support", group: "Project Support", image: "assets/team/jordan-reid.jpg" },
 ];
 
 const teamWorkstreams = [

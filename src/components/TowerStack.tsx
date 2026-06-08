@@ -16,7 +16,7 @@ export default function TowerStack({ activeFloor, onSelect }: TowerStackProps) {
         <h2>2 World Trade Center</h2>
       </div>
       <div className="tower-wrap">
-        <img className="tower-rendering" src="/assets/renderings/amex-2wtc-looking-up.jpg" alt="2 World Trade Center tower stack rendering" />
+        <img className="tower-rendering" src="assets/renderings/amex-2wtc-looking-up.jpg" alt="2 World Trade Center tower stack rendering" />
         <div className="tower-fade" />
         <button className="active-stack-marker" onClick={() => onSelect(floorBands.find((band) => band.id === "level-35") ?? activeFloor)}>
           <span>Active View</span>

@@ -27,7 +27,7 @@ export default function ProofSourcePanel() {
     <aside className="proof-source proof-panel">
       <span className="proof-eyebrow">Proof Source</span>
       <h2>270 Park Avenue</h2>
-      <img src="/assets/renderings/amex-2wtc-day-crown.jpg" alt="" />
+      <img src="assets/renderings/amex-2wtc-day-crown.jpg" alt="" />
       <p>A proven delivery platform for complex, high-performance corporate headquarters interiors.</p>
       <div className="proof-fact-list">
         {facts.map(({ icon: Icon, label, value }) => (
