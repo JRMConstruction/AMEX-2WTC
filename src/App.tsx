@@ -3,7 +3,8 @@ import ThemeToggle from "./components/ThemeToggle";
 import StackPage from "./components/StackPage";
 import NavInterfacePage from "./components/NavInterfacePage";
 import { ProjectFlowStrip } from "./components/ProjectFlowMap";
-import { useState } from "react";
+import { LogOut } from "lucide-react";
+import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import type { NavMode } from "./data/dashboardMetrics";
 
@@ -12,6 +13,7 @@ export type ViewMode = "2D Plan" | "3D View";
 
 const PRESENTATION_PASSWORD = "AMEX2WTC!2026";
 const PASSWORD_SESSION_KEY = "amex-2wtc-unlocked";
+const INACTIVITY_TIMEOUT_MS = 15 * 60 * 1000;
 
 function readPasswordSession() {
   try {
@@ -26,6 +28,14 @@ function writePasswordSession() {
     window.sessionStorage?.setItem(PASSWORD_SESSION_KEY, "true");
   } catch {
     // Unlock this page even when browser storage is unavailable.
+  }
+}
+
+function clearPasswordSession() {
+  try {
+    window.sessionStorage?.removeItem(PASSWORD_SESSION_KEY);
+  } catch {
+    // Storage may be unavailable in some preview contexts.
   }
 }
 
@@ -93,6 +103,36 @@ function App() {
   const [activeMode, setActiveMode] = useState<NavMode>("VISION");
   const [unlocked, setUnlocked] = useState(readPasswordSession);
 
+  const lockPresentation = () => {
+    clearPasswordSession();
+    setUnlocked(false);
+    setActiveMode("VISION");
+  };
+
+  useEffect(() => {
+    if (!unlocked) {
+      return undefined;
+    }
+
+    let inactivityTimer = window.setTimeout(lockPresentation, INACTIVITY_TIMEOUT_MS);
+    const resetInactivityTimer = () => {
+      window.clearTimeout(inactivityTimer);
+      inactivityTimer = window.setTimeout(lockPresentation, INACTIVITY_TIMEOUT_MS);
+    };
+    const activityEvents = ["click", "keydown", "mousemove", "pointerdown", "scroll", "touchstart"];
+
+    activityEvents.forEach((eventName) => {
+      window.addEventListener(eventName, resetInactivityTimer, { passive: true });
+    });
+
+    return () => {
+      window.clearTimeout(inactivityTimer);
+      activityEvents.forEach((eventName) => {
+        window.removeEventListener(eventName, resetInactivityTimer);
+      });
+    };
+  }, [unlocked]);
+
   if (!unlocked) {
     return <PasswordGate onUnlock={() => setUnlocked(true)} />;
   }
@@ -101,6 +141,10 @@ function App() {
     <div className={`app-shell stack-app ${theme}`}>
       <TopNav activeMode={activeMode} onModeChange={setActiveMode}>
         <ThemeToggle theme={theme} onToggle={() => setTheme(theme === "light" ? "dark" : "light")} />
+        <button className="logout-button" type="button" onClick={lockPresentation} aria-label="Log out of presentation" title="Log out">
+          <LogOut size={16} />
+          <span>Logout</span>
+        </button>
       </TopNav>
       <ProjectFlowStrip activeMode={activeMode} onModeChange={setActiveMode} />
       {activeMode === "STACK" ? <StackPage /> : <NavInterfacePage mode={activeMode} onModeChange={setActiveMode} />}

@@ -312,7 +312,8 @@ button {
 }
 
 .theme-toggle,
-.icon-command {
+.icon-command,
+.logout-button {
   border: 1px solid rgba(255, 255, 255, 0.28);
   color: white;
   background: rgba(255, 255, 255, 0.12);
@@ -323,6 +324,19 @@ button {
   align-items: center;
   gap: 8px;
   cursor: pointer;
+}
+
+.logout-button {
+  border-color: rgba(255, 255, 255, 0.36);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .jrm-wordmark {
