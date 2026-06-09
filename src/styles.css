@@ -19,6 +19,166 @@ button {
   font: inherit;
 }
 
+.password-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(0, 12, 54, 0.66), rgba(0, 22, 93, 0.88)),
+    radial-gradient(circle at 76% 22%, rgba(0, 111, 207, 0.48), transparent 28%),
+    url("/AMEX-2WTC/assets/renderings/amex-2wtc-dusk-crown.jpg") center / cover no-repeat;
+}
+
+.password-card {
+  width: min(760px, 100%);
+  padding: 34px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(145deg, rgba(0, 23, 93, 0.92), rgba(0, 50, 122, 0.76));
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(14px);
+}
+
+.password-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.password-amex {
+  width: 190px;
+  max-width: 46%;
+  height: auto;
+  color: white;
+}
+
+.password-jrm {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  font-size: 48px;
+  line-height: 0.86;
+  font-weight: 1000;
+  letter-spacing: 0.02em;
+}
+
+.password-jrm span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.password-copy {
+  margin-top: 34px;
+}
+
+.password-copy span,
+.password-form label,
+.password-hint,
+.password-error {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.password-copy span {
+  color: #85afe7;
+}
+
+.password-copy h1 {
+  margin: 10px 0 0;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 0.94;
+  font-weight: 1000;
+  letter-spacing: 0;
+}
+
+.password-copy p {
+  max-width: 440px;
+  margin: 15px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.password-form {
+  margin-top: 34px;
+}
+
+.password-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.password-input-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 132px;
+  gap: 10px;
+}
+
+.password-input-row input {
+  min-width: 0;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.96);
+  color: #00175d;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 850;
+  outline: none;
+}
+
+.password-input-row input:focus {
+  border-color: #85afe7;
+  box-shadow: 0 0 0 4px rgba(133, 175, 231, 0.24);
+}
+
+.password-input-row button {
+  height: 52px;
+  border: 0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #004bad;
+  font-size: 13px;
+  font-weight: 1000;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.password-input-row button:hover {
+  background: #85afe7;
+  color: #00175d;
+}
+
+.password-hint,
+.password-error {
+  margin: 12px 0 0;
+  letter-spacing: 0.08em;
+}
+
+.password-hint {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.password-error {
+  color: #ffd45d;
+}
+
 .app-shell {
   --amex-blue: #006fcf;
   --amex-deep-navy: #00175d;
